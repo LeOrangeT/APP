@@ -264,4 +264,5 @@ python src/test.py
 
 ## 免责声明
 
-本项目仅供学习和研究使用，不构成投资建议。
+本项目仅供学习和研究使用，不构成投资建议。项目已经通过Apache License 2.0协议开源，详见https://github.com/LeOrangeT/APP
+
