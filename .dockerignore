@@ -1,0 +1,58 @@
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# 日志和临时文件
+*.log
+*.tmp
+logs/
+
+# 备份文件
+*.bak
+*.zip
+
+# 数据文件（通过docker-compose挂载，不打包进镜像）
+code/data/*.csv
+data/*.csv
+
+# 输出文件（通过docker-compose挂载）
+code/output/
+code/output_rolling/
+code/evaluation/
+
+# 临时文件（通过docker-compose挂载）
+code/temp/
+temp/
+
+# 模型文件（保留在镜像内，但排除包含本地路径的配置快照）
+code/model/log/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 其他
+*.tar
+README.md

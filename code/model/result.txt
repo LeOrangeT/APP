@@ -1,0 +1,2 @@
+Best epoch: 136
+Best final_score (ndcg@5): 0.516540

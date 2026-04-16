@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  stock-predict:
+    image: bdc2026
+    container_name: stock-predict
+    volumes:
+      # 挂载数据目录
+      - ./code/data:/app/code/data
+      # 挂载输出目录
+      - ./code/output:/app/code/output
+      # 挂载临时目录
+      - ./code/temp:/app/code/temp
+    environment:
+      - TZ=Asia/Shanghai
+    # 默认执行初始化脚本
+    command: bash /app/code/init.sh
